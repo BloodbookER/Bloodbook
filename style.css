@@ -126,3 +126,39 @@ img {
     padding-right: 60px;
     padding-bottom: 100px;
 }
+
+#buttoncontainerleft {
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+}
+
+#contractbuttonleft {
+    font-family: 'Nothing You Could Do', cursive;
+    border-radius: 15px;
+    border-style: none;
+    height: 50px;
+    width: 80px;
+    background: rgba(20, 20, 20, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#buttoncontainerright {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+
+#contractbuttonright {
+    font-family: 'Nothing You Could Do', cursive;
+    border-radius: 15px;
+    border-style: none;
+    height: 50px;
+    width: 80px;
+    background: rgba(20, 20, 20, 0.5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

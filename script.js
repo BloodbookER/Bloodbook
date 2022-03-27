@@ -69,8 +69,8 @@ function randomContract() {
         ],
         [
             //Jerren
-            "Target Slain: 75gold<br>Gankers: +75gold<br>Target uses magic: +75gold<br>Phantoms use magic:+75gold<br>Spell-parried: +100gold<br>You used magic?: -75gold",
-            "Target Slain: 75gold<br>Gankers: +75gold<br>Target uses magic: +75gold<br>Phantoms use magic:+75gold<br>Spell-parried: +100gold<br>You used magic?: -75gold"
+            "Target Slain: 75gold<br>Gankers: +75gold<br>Target uses magic: +75gold<br>Phantoms use magic:+75gold<br>Spell-parry: +100gold<br>You used magic?: -75gold",
+            "Target Slain: 75gold<br>Gankers: +75gold<br>Target uses magic: +75gold<br>Phantoms use magic:+75gold<br>Spell-parry: +100gold<br>You used magic?: -75gold"
         ],
         [
             //Diallos
