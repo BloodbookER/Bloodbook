@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+body {
+    background-color: #050505;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #a2bdd8;
+    margin-top: 60px;
+    border-radius: 25px;
+}
+
+h3 {
+    margin: 40px 0 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    color: #42b983;
+}
+
+input {
+    background-color: rgb(65, 65, 65);
+    color: #a2bdd8;
+    font-size: 0.8em;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+#groceryTable {
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+#book {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    background-image: url("./book.jpg");
+}
+
+#leftpage {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 35px;
+    font-style: bold;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 60px;
+    margin-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    float: left;
+    width: 320px;
+    height: 600px;
+}
+
+#rightpage {
+    font-family: 'Nothing You Could Do', cursive;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 60px;
+    margin-left: 20px;
+    padding-top: 60px;
+    float: right;
+    width: 320px;
+    height: 600px;
+}
+
+#title {
+    font-size: 30px;
+}
+
+#requirements {
+    font-size: 30px;
+}
+
+#story {
+    font-size: 22px;
+}
+
+#payments,
+#requirements {
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 20px;
+    text-align: right;
+}
+
+img {
+    opacity: 0.2;
+}
+
+#requirement {
+    float: top;
+}
+
+#requirementsTitle {
+    padding-top: 30px;
+    font-size: 25px;
+    position: relative;
+    width: 320px;
+}
+
+#paymentTitle {
+    font-size: 25px;
+    position: relative;
+    width: 320px;
+}
+
+#payment {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 60px;
+    padding-bottom: 100px;
+}
