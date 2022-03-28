@@ -37,6 +37,7 @@ function payday() {
     } else {
         money = money + payout;
         goldcounter.innerHTML = `Gold: ${money}`;
+        payout = 0;
         randomContract()
     }
 }
