@@ -12,6 +12,7 @@ let payments = document.getElementById("payments");
 
 //Money mechanic
 let goldcounter = document.getElementById("goldcounter");
+let failedcontract = 0;
 let money = 0;
 var payout = 0;
 let globalchng = "";
@@ -19,12 +20,18 @@ let globalchng = "";
 function check(number) {
     var checkBox = document.getElementById(`challenge${number}`);
     if (checkBox.checked == true) {
-        payout = payout + globalchng[number];
-        console.log(payout);
+        if (globalchng[number] == "Fail") {
+            failedcontract = 1;
+
+        } else {
+            payout = payout + globalchng[number];
+        }
     } else {
-        console.log(globalchng[number]);
-        payout = payout - globalchng[number];
-        console.log(payout);
+        if (globalchng[number] == "Fail") {
+            failedcontract = 0;
+        } else {
+            payout = payout - globalchng[number];
+        }
     }
 }
 
@@ -33,12 +40,17 @@ function payday() {
         firststart = 1;
         startbutton.innerHTML = "<b>Contract Completed<b>";
         failbutton.innerHTML = "<b>Contract Failed<b>";
-        randomContract()
+        randomContract();
     } else {
-        money = money + payout;
-        goldcounter.innerHTML = `Gold: ${money}`;
-        payout = 0;
-        randomContract()
+        if (failedcontract == 1) {
+            failedcontract = 0;
+            payout = 0;
+        } else {
+            money = money + payout;
+            goldcounter.innerHTML = `Gold: ${money}`;
+            payout = 0;
+        }
+        randomContract();
     }
 }
 
@@ -49,6 +61,7 @@ function failed() {
         failbutton.innerHTML = "<b>Contract Failed<b>";
         randomContract()
     } else {
+        failedcontract = 0;
         payout = 0;
         randomContract();
     }
