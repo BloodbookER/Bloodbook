@@ -166,8 +166,9 @@ img {
     border-style: none;
     height: 50px;
     width: 80px;
-    background: rgba(20, 20, 20, 0.5);
+    background: rgba(20, 20, 20, 0);
     position: absolute;
+    font-size: 0.5em;
     bottom: 0;
     left: 0;
 }
@@ -184,8 +185,17 @@ img {
     border-style: none;
     height: 50px;
     width: 80px;
-    background: rgba(20, 20, 20, 0.5);
+    font-size: 1em;
+    background: rgba(20, 20, 20, 0);
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+#contractbuttonright:hover {
+    color: red;
+}
+
+#contractbuttonleft:hover {
+    color: red;
 }
